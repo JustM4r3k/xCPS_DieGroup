@@ -86,7 +86,7 @@ aster components reduce makespan but raise BOM (BR-01.1&#xD;
         <body>Current config: NormalBelt (all 5), NormalIndexTable, 2× NormalGantryArm. BOM = 929 + 334 + 2*999 = 3,261 eur → price = 5,113.20 eur = defaultPrice . Belt price covers the full belt set; all belts share one speed class.&#xD;
 </body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_7kSfkOR0EfGjsdib3d454A" name="xCPS">
+      <packagedElement xmi:type="uml:Class" xmi:id="_7kSfkOR0EfGjsdib3d454A" name="xCPS" useCase="_Fm6VIOPzEfGr5_9O2LRA1g _muz_kOPyEfGr5_9O2LRA1g _40ucEOPyEfGr5_9O2LRA1g _69Q14OPyEfGr5_9O2LRA1g _TV50sOPzEfGr5_9O2LRA1g">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_0YwQgOR1EfGjsdib3d454A" name="io" type="_BYKisOR1EfGjsdib3d454A" aggregation="composite" association="_0YubUOR1EfGjsdib3d454A">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xP8QAOR2EfGjsdib3d454A" name="LiteralInteger1" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xQBIgOR2EfGjsdib3d454A" name="LiteralUnlimitedNatural1" value="1"/>
@@ -429,17 +429,25 @@ aster components reduce makespan but raise BOM (BR-01.1&#xD;
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ZRwaAOPxEfGg8KH2-CF6mA" name="Behavior">
       <packagedElement xmi:type="uml:Package" xmi:id="_tPXX8OPxEfGr5_9O2LRA1g" name="Use Cases">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_muz_kOPyEfGr5_9O2LRA1g" name="Assemble product">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_muz_kOPyEfGr5_9O2LRA1g" name="Assemble product" subject="_7kSfkOR0EfGjsdib3d454A">
           <include xmi:type="uml:Include" xmi:id="_Q3CwIOP0EfGr5_9O2LRA1g" addition="_69Q14OPyEfGr5_9O2LRA1g"/>
           <include xmi:type="uml:Include" xmi:id="_UiV9MOP0EfGr5_9O2LRA1g" addition="_40ucEOPyEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_usbZgOcrEfG1GOAOhRn_1w" addition="_40ucEOPyEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_wDhIQOcrEfG1GOAOhRn_1w" addition="_69Q14OPyEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_Gww8QOcsEfG1GOAOhRn_1w" addition="_40ucEOPyEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_HR7voOcsEfG1GOAOhRn_1w" addition="_69Q14OPyEfGr5_9O2LRA1g"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_40ucEOPyEfGr5_9O2LRA1g" name="Load pieces on belt"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_69Q14OPyEfGr5_9O2LRA1g" name="Invert top"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_Fm6VIOPzEfGr5_9O2LRA1g" name="Assemble Batch">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_40ucEOPyEfGr5_9O2LRA1g" name="Load pieces on belt" subject="_7kSfkOR0EfGjsdib3d454A"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_69Q14OPyEfGr5_9O2LRA1g" name="Invert top" subject="_7kSfkOR0EfGjsdib3d454A"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_Fm6VIOPzEfGr5_9O2LRA1g" name="Assemble Batch" subject="_7kSfkOR0EfGjsdib3d454A">
           <include xmi:type="uml:Include" xmi:id="_Gxk8AOP0EfGr5_9O2LRA1g" addition="_muz_kOPyEfGr5_9O2LRA1g"/>
           <include xmi:type="uml:Include" xmi:id="_nrfYUOP0EfGr5_9O2LRA1g" addition="_TV50sOPzEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_xT81YOcrEfG1GOAOhRn_1w" addition="_muz_kOPyEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_x9L_oOcrEfG1GOAOhRn_1w" addition="_TV50sOPzEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_Hy680OcsEfG1GOAOhRn_1w" addition="_muz_kOPyEfGr5_9O2LRA1g"/>
+          <include xmi:type="uml:Include" xmi:id="_ISueQOcsEfG1GOAOhRn_1w" addition="_TV50sOPzEfGr5_9O2LRA1g"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_TV50sOPzEfGr5_9O2LRA1g" name="Unload product to storage"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_TV50sOPzEfGr5_9O2LRA1g" name="Unload product to storage" subject="_7kSfkOR0EfGjsdib3d454A"/>
         <packagedElement xmi:type="uml:Actor" xmi:id="_Z-cO8OPzEfGr5_9O2LRA1g" name="Machine Operator"/>
         <packagedElement xmi:type="uml:Association" xmi:id="_bVMxEOP0EfGr5_9O2LRA1g" memberEnd="_bVS3sOP0EfGr5_9O2LRA1g _bVTewOP0EfGr5_9O2LRA1g">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bVSQoOP0EfGr5_9O2LRA1g" source="org.eclipse.papyrus">
