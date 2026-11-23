@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_MqWNkOPxEfGg8KH2-CF6mA" name="VxCPS">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_MzMAgePxEfGg8KH2-CF6mA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -451,6 +451,133 @@ aster components reduce makespan but raise BOM (BR-01.1&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_ummQoOPxEfGr5_9O2LRA1g" name="Activities"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mZhWgObbEfGP-dqCs_iRcA" name="Parameters">
+      <packagedElement xmi:type="uml:Class" xmi:id="_u5ZF0ObbEfGP-dqCs_iRcA" name="BOMCalculation">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_H4-v4ObcEfGP-dqCs_iRcA" name="Constraint5">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_H4_-AObcEfGP-dqCs_iRcA" name="constraintSpec">
+            <language>Natural language</language>
+            <body>BOM = Arm + Belt + Table&#xD;
+</body>
+          </specification>
+        </ownedRule>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7Y4sYObbEfGP-dqCs_iRcA" name="Arm">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Dx0tQObcEfGP-dqCs_iRcA" name="Belt">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FQJFYObcEfGP-dqCs_iRcA" name="Table">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GoexUObcEfGP-dqCs_iRcA" name="BOM">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vJIyAObbEfGP-dqCs_iRcA" name="SalesVolume">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_nBk_kObcEfGP-dqCs_iRcA" name="Constraint4">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_nBk_kebcEfGP-dqCs_iRcA" name="constraintSpec">
+            <language>Natural language</language>
+            <body>Volume = max(0, 1500 + 2 * (5133.20 - Price) + 25 * (270.96 - M))</body>
+          </specification>
+        </ownedRule>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eqYrIObcEfGP-dqCs_iRcA" name="Price">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jhjOYObcEfGP-dqCs_iRcA" name="M">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_lk0tsObcEfGP-dqCs_iRcA" name="Volume">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vTKQsObbEfGP-dqCs_iRcA" name="SellingPrice">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_RXQoMObcEfGP-dqCs_iRcA" name="Constraint3">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RXRPQObcEfGP-dqCs_iRcA" name="constraintSpec">
+            <language>Natural language</language>
+            <body>Price = 1.2 * (BOM + 1000)</body>
+          </specification>
+        </ownedRule>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OQedcObcEfGP-dqCs_iRcA" name="BOM">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OwnWEObcEfGP-dqCs_iRcA" name="Price">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vdWugObbEfGP-dqCs_iRcA" name="ProfitEstimate">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_5QBtAObcEfGP-dqCs_iRcA" name="Constraint6">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_5QCUEObcEfGP-dqCs_iRcA" name="constraintSpec">
+            <language>Natural language</language>
+            <body>Profit = Volume * (Price - BOM - 1000) - NRE</body>
+          </specification>
+        </ownedRule>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zXLqUObcEfGP-dqCs_iRcA" name="Volume">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0opSMObcEfGP-dqCs_iRcA" name="Price">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1llbkObcEfGP-dqCs_iRcA" name="BOM">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2lPhwObcEfGP-dqCs_iRcA" name="NRE">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3igbQObcEfGP-dqCs_iRcA" name="Profit">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nuWUEObeEfGP-dqCs_iRcA" name="DesingAnalysis">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qPfbIObeEfGP-dqCs_iRcA" name="cBOM" type="_u5ZF0ObbEfGP-dqCs_iRcA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tevlYObeEfGP-dqCs_iRcA" name="cPrice" type="_vTKQsObbEfGP-dqCs_iRcA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wXSf0ObeEfGP-dqCs_iRcA" name="cVolume" type="_vJIyAObbEfGP-dqCs_iRcA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zPmwwObeEfGP-dqCs_iRcA" name="cProfit" type="_vdWugObbEfGP-dqCs_iRcA"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_4wTjwObfEfGP-dqCs_iRcA" name="BindingConnector5">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_4wWnEObfEfGP-dqCs_iRcA" role="_7Y4sYObbEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_4wWnEebfEfGP-dqCs_iRcA" role="_7Y4sYObbEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_5SfDwObfEfGP-dqCs_iRcA" name="BindingConnector6">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5Sfq0ObfEfGP-dqCs_iRcA" role="_Dx0tQObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5SgR4ObfEfGP-dqCs_iRcA" role="_Dx0tQObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_5qc30ObfEfGP-dqCs_iRcA" name="BindingConnector7">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5qeF8ObfEfGP-dqCs_iRcA" role="_FQJFYObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5qeF8ebfEfGP-dqCs_iRcA" role="_FQJFYObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_6BBkwObfEfGP-dqCs_iRcA" name="BindingConnector8">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_6BCL0ObfEfGP-dqCs_iRcA" role="_GoexUObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_6BCL0ebfEfGP-dqCs_iRcA" role="_OQedcObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_6g7z4ObfEfGP-dqCs_iRcA" name="BindingConnector9">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_6g9pEObfEfGP-dqCs_iRcA" role="_OwnWEObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_6g9pEebfEfGP-dqCs_iRcA" role="_0opSMObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_7AcaYObfEfGP-dqCs_iRcA" name="BindingConnector10">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_7AdBcObfEfGP-dqCs_iRcA" role="_jhjOYObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_7AdBcebfEfGP-dqCs_iRcA" role="_eqYrIObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_8And8ObfEfGP-dqCs_iRcA" name="BindingConnector11">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_8AosEObfEfGP-dqCs_iRcA" role="_2lPhwObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_8AosEebfEfGP-dqCs_iRcA" role="_jhjOYObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_8llMMObfEfGP-dqCs_iRcA" name="BindingConnector12">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_8lnBYObfEfGP-dqCs_iRcA" role="_lk0tsObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_8lnBYebfEfGP-dqCs_iRcA" role="_zXLqUObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_9BXJQObfEfGP-dqCs_iRcA" name="BindingConnector13">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9BYXYObfEfGP-dqCs_iRcA" role="_GoexUObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9BYXYebfEfGP-dqCs_iRcA" role="_1llbkObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_9fMUwObfEfGP-dqCs_iRcA" name="BindingConnector14">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9fNi4ObfEfGP-dqCs_iRcA" role="_2lPhwObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9fNi4ebfEfGP-dqCs_iRcA" role="_2lPhwObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_AFaJEObgEfGP-dqCs_iRcA" name="BindingConnector15">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_AFbXMObgEfGP-dqCs_iRcA" role="_3igbQObcEfGP-dqCs_iRcA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_AFb-QObgEfGP-dqCs_iRcA" role="_3igbQObcEfGP-dqCs_iRcA"/>
+        </ownedConnector>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Muhi8OPxEfGg8KH2-CF6mA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MunpkOPxEfGg8KH2-CF6mA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -610,4 +737,35 @@ aster components reduce makespan but raise BOM (BR-01.1&#xD;
   <Blocks:NestedConnectorEnd xmi:id="_pWmAoOTjEfGHHe_n3jyJ4w" base_Element="_pWkygeTjEfGHHe_n3jyJ4w" propertyPath="_9ylGouR1EfGjsdib3d454A" base_ConnectorEnd="_pWkygeTjEfGHHe_n3jyJ4w"/>
   <PortsAndFlows:ItemFlow xmi:id="_zUwS4OTjEfGHHe_n3jyJ4w" base_InformationFlow="_zUsogOTjEfGHHe_n3jyJ4w"/>
   <PortsAndFlows:ItemFlow xmi:id="_4y7LwOTjEfGHHe_n3jyJ4w" base_InformationFlow="_4y26UOTjEfGHHe_n3jyJ4w"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_u61QQObbEfGP-dqCs_iRcA" base_Class="_u5ZF0ObbEfGP-dqCs_iRcA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_vJL1UObbEfGP-dqCs_iRcA" base_Class="_vJIyAObbEfGP-dqCs_iRcA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_vTMs8ObbEfGP-dqCs_iRcA" base_Class="_vTKQsObbEfGP-dqCs_iRcA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_vdX8oObbEfGP-dqCs_iRcA" base_Class="_vdWugObbEfGP-dqCs_iRcA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_nuYJQObeEfGP-dqCs_iRcA" base_Class="_nuWUEObeEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_4wWnEubfEfGP-dqCs_iRcA" base_Element="_4wWnEebfEfGP-dqCs_iRcA" propertyPath="_qPfbIObeEfGP-dqCs_iRcA" base_ConnectorEnd="_4wWnEebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_4wX1MObfEfGP-dqCs_iRcA" base_Connector="_4wTjwObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_5SgR4ebfEfGP-dqCs_iRcA" base_Element="_5SgR4ObfEfGP-dqCs_iRcA" propertyPath="_qPfbIObeEfGP-dqCs_iRcA" base_ConnectorEnd="_5SgR4ObfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_5SgR4ubfEfGP-dqCs_iRcA" base_Connector="_5SfDwObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_5qeF8ubfEfGP-dqCs_iRcA" base_Element="_5qeF8ebfEfGP-dqCs_iRcA" propertyPath="_qPfbIObeEfGP-dqCs_iRcA" base_ConnectorEnd="_5qeF8ebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_5qetAObfEfGP-dqCs_iRcA" base_Connector="_5qc30ObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_6BCL0ubfEfGP-dqCs_iRcA" base_Element="_6BCL0ObfEfGP-dqCs_iRcA" propertyPath="_qPfbIObeEfGP-dqCs_iRcA" base_ConnectorEnd="_6BCL0ObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_6BCy4ObfEfGP-dqCs_iRcA" base_Element="_6BCL0ebfEfGP-dqCs_iRcA" propertyPath="_tevlYObeEfGP-dqCs_iRcA" base_ConnectorEnd="_6BCL0ebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_6BCy4ebfEfGP-dqCs_iRcA" base_Connector="_6BBkwObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_6g9pEubfEfGP-dqCs_iRcA" base_Element="_6g9pEObfEfGP-dqCs_iRcA" propertyPath="_tevlYObeEfGP-dqCs_iRcA" base_ConnectorEnd="_6g9pEObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_6g-QIObfEfGP-dqCs_iRcA" base_Element="_6g9pEebfEfGP-dqCs_iRcA" propertyPath="_zPmwwObeEfGP-dqCs_iRcA" base_ConnectorEnd="_6g9pEebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_6g-QIebfEfGP-dqCs_iRcA" base_Connector="_6g7z4ObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_7AdogObfEfGP-dqCs_iRcA" base_Element="_7AdBcebfEfGP-dqCs_iRcA" propertyPath="_wXSf0ObeEfGP-dqCs_iRcA" base_ConnectorEnd="_7AdBcebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_7AdogebfEfGP-dqCs_iRcA" base_Connector="_7AcaYObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8AosEubfEfGP-dqCs_iRcA" base_Element="_8AosEebfEfGP-dqCs_iRcA" propertyPath="_wXSf0ObeEfGP-dqCs_iRcA" base_ConnectorEnd="_8AosEebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_8ApTIObfEfGP-dqCs_iRcA" base_Connector="_8And8ObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8lnBYubfEfGP-dqCs_iRcA" base_Element="_8lnBYObfEfGP-dqCs_iRcA" propertyPath="_wXSf0ObeEfGP-dqCs_iRcA" base_ConnectorEnd="_8lnBYObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8lnocObfEfGP-dqCs_iRcA" base_Element="_8lnBYebfEfGP-dqCs_iRcA" propertyPath="_zPmwwObeEfGP-dqCs_iRcA" base_ConnectorEnd="_8lnBYebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_8lnocebfEfGP-dqCs_iRcA" base_Connector="_8llMMObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9BYXYubfEfGP-dqCs_iRcA" base_Element="_9BYXYObfEfGP-dqCs_iRcA" propertyPath="_qPfbIObeEfGP-dqCs_iRcA" base_ConnectorEnd="_9BYXYObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9BY-cObfEfGP-dqCs_iRcA" base_Element="_9BYXYebfEfGP-dqCs_iRcA" propertyPath="_zPmwwObeEfGP-dqCs_iRcA" base_ConnectorEnd="_9BYXYebfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_9BY-cebfEfGP-dqCs_iRcA" base_Connector="_9BXJQObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9fNi4ubfEfGP-dqCs_iRcA" base_Element="_9fNi4ObfEfGP-dqCs_iRcA" propertyPath="_zPmwwObeEfGP-dqCs_iRcA" base_ConnectorEnd="_9fNi4ObfEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_9fOJ8ObfEfGP-dqCs_iRcA" base_Connector="_9fMUwObfEfGP-dqCs_iRcA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_AFb-QebgEfGP-dqCs_iRcA" base_Element="_AFbXMObgEfGP-dqCs_iRcA" propertyPath="_zPmwwObeEfGP-dqCs_iRcA" base_ConnectorEnd="_AFbXMObgEfGP-dqCs_iRcA"/>
+  <Blocks:BindingConnector xmi:id="_AFb-QubgEfGP-dqCs_iRcA" base_Connector="_AFaJEObgEfGP-dqCs_iRcA"/>
 </xmi:XMI>
