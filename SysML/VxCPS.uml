@@ -26,9 +26,11 @@
 </body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_lgSkQORxEfGjsdib3d454A" annotatedElement="_AcI78ORMEfGD2PzXPcaESg">
-        <body>F&#xD;
-aster components reduce makespan but raise BOM (BR-01.1&#xD;
-) and energy (PR-01).&#xD;
+        <body>Faster components reduce makespan but raise BOM (BR-01.1) and energy (PR-01).&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_t2OeYOc4EfGMO7H8UnEinw" annotatedElement="_rhacMORQEfGD2PzXPcaESg">
+        <body>Design hypothesis: fast belts. -> To be confirmed after POOSL analysis: Needs to be >=30.2s makespan reduction to offset the 378eur price, and energy &lt;=2.0Mj (PR-01)&#xD;
 </body>
       </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_8WSvoORFEfGD2PzXPcaESg" name="xCPS requirements" isAbstract="true">
@@ -56,18 +58,12 @@ aster components reduce makespan but raise BOM (BR-01.1&#xD;
           <nestedClassifier xmi:type="uml:Class" xmi:id="_1vmEQORMEfGD2PzXPcaESg" name="Customer interest">
             <nestedClassifier xmi:type="uml:Class" xmi:id="_AaHtQORNEfGD2PzXPcaESg" name="BOM target"/>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_KuuJkORNEfGD2PzXPcaESg" name="Profit objective"/>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_m4ma0ORMEfGD2PzXPcaESg" name="Profit estimation" isAbstract="true">
             <nestedClassifier xmi:type="uml:Class" xmi:id="_gnaUIORNEfGD2PzXPcaESg" name="Selling Price"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_lj6DUORNEfGD2PzXPcaESg" name="Redesign cost"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_wnr50ORNEfGD2PzXPcaESg" name="Market Lifetime"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_T2ZfwORNEfGD2PzXPcaESg" name="Sales volume"/>
           </nestedClassifier>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_uzXgsORGEfGD2PzXPcaESg" name="Platform constraints" isAbstract="true">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_rhacMORQEfGD2PzXPcaESg" name="Component choice"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_yrrDcORQEfGD2PzXPcaESg" name="Gantry count"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_5X2nkORQEfGD2PzXPcaESg" name="Fixed layout"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wjurEORGEfGD2PzXPcaESg" name="Verification requirements" isAbstract="true">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_XpkzcORuEfGD2PzXPcaESg" name="Correctness argument"/>
@@ -77,6 +73,12 @@ aster components reduce makespan but raise BOM (BR-01.1&#xD;
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_t_0qQOROEfGD2PzXPcaESg" name="" client="_AaHtQORNEfGD2PzXPcaESg" supplier="_1vmEQORMEfGD2PzXPcaESg"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_kfdR0ORPEfGD2PzXPcaESg" name="" client="_AcI78ORMEfGD2PzXPcaESg" supplier="_1vmEQORMEfGD2PzXPcaESg"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_IAOYoORxEfGjsdib3d454A" name="" client="_BQApEORxEfGjsdib3d454A" supplier="_6-tDEORwEfGjsdib3d454A"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uzXgsORGEfGD2PzXPcaESg" name="Platform constraints" isAbstract="true">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_rhacMORQEfGD2PzXPcaESg" name="Component choice"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_yrrDcORQEfGD2PzXPcaESg" name="Gantry count"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_5X2nkORQEfGD2PzXPcaESg" name="Fixed layout"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_KuuJkORNEfGD2PzXPcaESg" name="Profit objective"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_YBDnIOPxEfGg8KH2-CF6mA" name="Structure">
       <ownedComment xmi:type="uml:Comment" xmi:id="_bO1McOR6EfGjsdib3d454A" annotatedElement="_D_9EUOR1EfGjsdib3d454A">
