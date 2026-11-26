@@ -12,10 +12,6 @@
         <body>price = 1.2(BOM + 1000) &lt; 5113.20 ⇔ BOM &lt; 3261 eur&#xD;
 . Current BOM = 929 + 334 + 2·999 = 3261 eur</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_wrixMORwEfGjsdib3d454A" annotatedElement="_AcI78ORMEfGD2PzXPcaESg">
-        <body>Reference makespan 270.96 s, inverted tops and normal bottoms&#xD;
-</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_Mz14oORxEfGjsdib3d454A" annotatedElement="_BQApEORxEfGjsdib3d454A">
         <body>The turner is the only resource that can invert pieces&#xD;
 </body>
@@ -25,25 +21,23 @@
 1,000,000&#xD;
 </body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_lgSkQORxEfGjsdib3d454A" annotatedElement="_AcI78ORMEfGD2PzXPcaESg">
-        <body>Faster components reduce makespan but raise BOM (BR-01.1) and energy (PR-01).&#xD;
-</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_t2OeYOc4EfGMO7H8UnEinw" annotatedElement="_rhacMORQEfGD2PzXPcaESg">
         <body>Design hypothesis: fast belts. -> To be confirmed after POOSL analysis: Needs to be >=30.2s makespan reduction to offset the 378eur price, and energy &lt;=2.0Mj (PR-01)&#xD;
 </body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_DUproOmmEfGozJ-Gjk-2WA" annotatedElement="_AaHtQORNEfGD2PzXPcaESg">
+        <body>Faster components reduce makespan but raise BOM (BR-01.1) and energy (PR-01).&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Ed6ZwOmmEfGozJ-Gjk-2WA" annotatedElement="_AaHtQORNEfGD2PzXPcaESg">
+        <body>Reference makespan 270.96 s, inverted tops and normal bottoms&#xD;
+</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_8WSvoORFEfGD2PzXPcaESg" name="xCPS requirements" isAbstract="true">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_k6O4YORGEfGD2PzXPcaESg" name="Functional requirements" isAbstract="true">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_axE6QORKEfGD2PzXPcaESg" name="Product assembly"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_xZX80ORKEfGD2PzXPcaESg" name="Product return"/>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_8GdKkORKEfGD2PzXPcaESg" name="Batch completion"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_6-tDEORwEfGjsdib3d454A" name="Orientation handling">
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_BQApEORxEfGjsdib3d454A" name="Orientation correction"/>
-          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6-tDEORwEfGjsdib3d454A" name="Orientation handling"/>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_g9_24ORHEfGD2PzXPcaESg" name="Batch assembly"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_6UiWcORJEfGD2PzXPcaESg" name="Piece retrieval"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_MGDQQORKEfGD2PzXPcaESg" name="Piece transport"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_n2z-QORGEfGD2PzXPcaESg" name="Safety requirements" isAbstract="true">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_LG-jcORLEfGD2PzXPcaESg" name="Piece collision"/>
@@ -52,24 +46,16 @@
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_pSTr4ORGEfGD2PzXPcaESg" name="Performance requirements" isAbstract="true">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_4RjgIORLEfGD2PzXPcaESg" name="Batch energy"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_AcI78ORMEfGD2PzXPcaESg" name="Makespan target"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_s4dTMORGEfGD2PzXPcaESg" name="Business requirements" isAbstract="true">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_1vmEQORMEfGD2PzXPcaESg" name="Customer interest"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_m4ma0ORMEfGD2PzXPcaESg" name="Profit estimation" isAbstract="true">
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_gnaUIORNEfGD2PzXPcaESg" name="Selling Price"/>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_lj6DUORNEfGD2PzXPcaESg" name="Redesign cost"/>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_wnr50ORNEfGD2PzXPcaESg" name="Market Lifetime"/>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_T2ZfwORNEfGD2PzXPcaESg" name="Sales volume"/>
-          </nestedClassifier>
         </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_wjurEORGEfGD2PzXPcaESg" name="Verification requirements" isAbstract="true">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_wjurEORGEfGD2PzXPcaESg" name="Testing requirements" isAbstract="true">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_XpkzcORuEfGD2PzXPcaESg" name="Correctness argument"/>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_N7VMUORJEfGD2PzXPcaESg" name="" client="_UiM6oOPxEfGg8KH2-CF6mA" supplier="_UiM6oOPxEfGg8KH2-CF6mA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_t_0qQOROEfGD2PzXPcaESg" name="" client="_AaHtQORNEfGD2PzXPcaESg" supplier="_1vmEQORMEfGD2PzXPcaESg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_kfdR0ORPEfGD2PzXPcaESg" name="" client="_AcI78ORMEfGD2PzXPcaESg" supplier="_1vmEQORMEfGD2PzXPcaESg"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_IAOYoORxEfGjsdib3d454A" name="" client="_BQApEORxEfGjsdib3d454A" supplier="_6-tDEORwEfGjsdib3d454A"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_uzXgsORGEfGD2PzXPcaESg" name="Platform constraints" isAbstract="true">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_rhacMORQEfGD2PzXPcaESg" name="Component choice"/>
@@ -78,6 +64,18 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_KuuJkORNEfGD2PzXPcaESg" name="Profit objective"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_AaHtQORNEfGD2PzXPcaESg" name="BOM target"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lj6DUORNEfGD2PzXPcaESg" name="Redesign cost"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T2ZfwORNEfGD2PzXPcaESg" name="Sales volume"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wnr50ORNEfGD2PzXPcaESg" name="Market Lifetime"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6UiWcORJEfGD2PzXPcaESg" name="Piece retrieval"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MGDQQORKEfGD2PzXPcaESg" name="Piece transport"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_axE6QORKEfGD2PzXPcaESg" name="Product assembly"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xZX80ORKEfGD2PzXPcaESg" name="Product return"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Qh7asOmlEfGozJ-Gjk-2WA" name="DeriveReqt22" client="_6UiWcORJEfGD2PzXPcaESg" supplier="_g9_24ORHEfGD2PzXPcaESg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_XzrxEOmlEfGozJ-Gjk-2WA" name="DeriveReqt23" client="_axE6QORKEfGD2PzXPcaESg" supplier="_g9_24ORHEfGD2PzXPcaESg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_iJ7MIOmlEfGozJ-Gjk-2WA" name="DeriveReqt24" client="_xZX80ORKEfGD2PzXPcaESg" supplier="_g9_24ORHEfGD2PzXPcaESg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_rx-EcOmlEfGozJ-Gjk-2WA" name="DeriveReqt25" client="_MGDQQORKEfGD2PzXPcaESg" supplier="_g9_24ORHEfGD2PzXPcaESg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BQApEORxEfGjsdib3d454A" name="Orientation correction"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_YBDnIOPxEfGg8KH2-CF6mA" name="Structure">
       <ownedComment xmi:type="uml:Comment" xmi:id="_bO1McOR6EfGjsdib3d454A" annotatedElement="_D_9EUOR1EfGjsdib3d454A">
@@ -658,29 +656,20 @@
   <Requirements:Requirement xmi:id="_VhW3oORLEfGD2PzXPcaESg" base_NamedElement="_VhUbYORLEfGD2PzXPcaESg" id="SR-02" text="Pieces shall never fall off a belt" base_Class="_VhUbYORLEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_jl8zwORLEfGD2PzXPcaESg" base_NamedElement="_jl6-kORLEfGD2PzXPcaESg" id="SR-03" text="The turner shall not rotate while a piece is entering or leaving" base_Class="_jl6-kORLEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_4RmjcORLEfGD2PzXPcaESg" base_NamedElement="_4RjgIORLEfGD2PzXPcaESg" id="PR-01" text="The enrgy consumption for producting one batch shall be less than 2.0MJ" base_Class="_4RjgIORLEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_AcKxIORMEfGD2PzXPcaESg" base_NamedElement="_AcI78ORMEfGD2PzXPcaESg" id="PR-02" text="If the selling price is not bellow 5113.2eur the batch makespan (inverted tops, normal bottoms) shall be less than 270.96s" base_Class="_AcI78ORMEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_m4oQAORMEfGD2PzXPcaESg" base_NamedElement="_m4ma0ORMEfGD2PzXPcaESg" base_Class="_m4ma0ORMEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_1voggORMEfGD2PzXPcaESg" base_NamedElement="_1vmEQORMEfGD2PzXPcaESg" id="BR-01" text="The selling price shall be bellow 5113.20eur or the batch makespan shall be bellow 270.96s" base_Class="_1vmEQORMEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_AaJicORNEfGD2PzXPcaESg" base_NamedElement="_AaHtQORNEfGD2PzXPcaESg" id="BR-01.1" text="If the batch makespan is not bellow 270.96s, the BOM shall bebellow 3261eur" base_Class="_AaHtQORNEfGD2PzXPcaESg"/>
+  <Requirements:Requirement xmi:id="_AaJicORNEfGD2PzXPcaESg" base_NamedElement="_AaHtQORNEfGD2PzXPcaESg" id="BR-01.1" text="If the batch makespan is not bellow 270.96s, the BOM shall be bellow 3261eur" base_Class="_AaHtQORNEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_Kuwl0ORNEfGD2PzXPcaESg" base_NamedElement="_KuuJkORNEfGD2PzXPcaESg" id="BR-02" text="The design shall maximise the expected profit, subject to PR-01" base_Class="_KuuJkORNEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_T2b8AORNEfGD2PzXPcaESg" base_NamedElement="_T2ZfwORNEfGD2PzXPcaESg" id="BR-03.1" text="The sales volume shall be computed with the described market module" base_Class="_T2ZfwORNEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_gncwYORNEfGD2PzXPcaESg" base_NamedElement="_gnaUIORNEfGD2PzXPcaESg" id="BR-03.2" text="The selling price shall be 1.2 × (BOM + eur1,000)." base_Class="_gnaUIORNEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_lj8fkORNEfGD2PzXPcaESg" base_NamedElement="_lj6DUORNEfGD2PzXPcaESg" id="BR-03.3" text="Profit shall include NRE (72,000eur application change, 108,000eur platform change) and the time-to-market delay (4 or 8 weeks)." base_Class="_lj6DUORNEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_wnu9IORNEfGD2PzXPcaESg" base_NamedElement="_wnr50ORNEfGD2PzXPcaESg" id="BR-03.4" text="Profit shall be evaluated over a 5-year lifetime at a market entry on 1st of Jully 2027." base_Class="_wnr50ORNEfGD2PzXPcaESg"/>
   <Requirements:DeriveReqt xmi:id="_t_3GgOROEfGD2PzXPcaESg" base_DirectedRelationship="_t_0qQOROEfGD2PzXPcaESg" base_Abstraction="_t_0qQOROEfGD2PzXPcaESg"/>
-  <Requirements:DeriveReqt xmi:id="_kfhjQORPEfGD2PzXPcaESg" base_DirectedRelationship="_kfdR0ORPEfGD2PzXPcaESg" base_Abstraction="_kfdR0ORPEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_rhcRYORQEfGD2PzXPcaESg" base_NamedElement="_rhacMORQEfGD2PzXPcaESg" id="CR-01" text="Belts, index table and gantry arms shall be chosen from the slow,, normal and fast variants" base_Class="_rhacMORQEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_yrtfsORQEfGD2PzXPcaESg" base_NamedElement="_yrrDcORQEfGD2PzXPcaESg" id="CR-02" text="The IO module shall have at least one gantry arm" base_Class="_yrrDcORQEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_5X5D0ORQEfGD2PzXPcaESg" base_NamedElement="_5X2nkORQEfGD2PzXPcaESg" id="CR-03" text="The machine layout (storage, belts, turner, index table 2, pick-and-place, switches) shall be kept as in the current machine" base_Class="_5X2nkORQEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_XpnPsORuEfGD2PzXPcaESg" base_NamedElement="_XpkzcORuEfGD2PzXPcaESg" id="VR-01" text="The correctness of the chosen design shall be supported by verified POOSL models" base_Class="_XpkzcORuEfGD2PzXPcaESg"/>
+  <Requirements:Requirement xmi:id="_XpnPsORuEfGD2PzXPcaESg" base_NamedElement="_XpkzcORuEfGD2PzXPcaESg" id="TR-01" text="The redisgned model shall be verified with POOSL and VxCPS" base_Class="_XpkzcORuEfGD2PzXPcaESg"/>
   <ModelElements:Rationale xmi:id="_KbRJoORvEfGD2PzXPcaESg" base_Comment="_6ua2QORuEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_6-20EORwEfGjsdib3d454A" base_NamedElement="_6-tDEORwEfGjsdib3d454A" id="FR-02" text="The system shall accept tops in normal or inverted orientation." base_Class="_6-tDEORwEfGjsdib3d454A"/>
   <Requirements:Requirement xmi:id="_BQE6gORxEfGjsdib3d454A" base_NamedElement="_BQApEORxEfGjsdib3d454A" id="FR-02.1" text="The system shall flip inverted tops with the turner before assembly." base_Class="_BQApEORxEfGjsdib3d454A"/>
   <Requirements:DeriveReqt xmi:id="_IAT4MORxEfGjsdib3d454A" base_DirectedRelationship="_IAOYoORxEfGjsdib3d454A" base_Abstraction="_IAOYoORxEfGjsdib3d454A"/>
   <ModelElements:Rationale xmi:id="_QbZ1MORxEfGjsdib3d454A" base_Comment="_Mz14oORxEfGjsdib3d454A"/>
-  <ModelElements:Rationale xmi:id="_RkkcsORxEfGjsdib3d454A" base_Comment="_wrixMORwEfGjsdib3d454A"/>
   <ModelElements:Rationale xmi:id="_uJOI8ORxEfGjsdib3d454A" base_Comment="_bvA3cORxEfGjsdib3d454A"/>
-  <ModelElements:Problem xmi:id="_eiFKEORzEfGjsdib3d454A" base_Comment="_lgSkQORxEfGjsdib3d454A"/>
   <Blocks:Block xmi:id="_7kVi4OR0EfGjsdib3d454A" base_Class="_7kSfkOR0EfGjsdib3d454A"/>
   <Blocks:Block xmi:id="_BYNmAOR1EfGjsdib3d454A" base_Class="_BYKisOR1EfGjsdib3d454A"/>
   <Blocks:Block xmi:id="_EAAHoOR1EfGjsdib3d454A" base_Class="_D_9EUOR1EfGjsdib3d454A"/>
@@ -769,4 +758,10 @@
   <Blocks:BindingConnector xmi:id="_9fOJ8ObfEfGP-dqCs_iRcA" base_Connector="_9fMUwObfEfGP-dqCs_iRcA"/>
   <Blocks:NestedConnectorEnd xmi:id="_AFb-QebgEfGP-dqCs_iRcA" base_Element="_AFbXMObgEfGP-dqCs_iRcA" propertyPath="_zPmwwObeEfGP-dqCs_iRcA" base_ConnectorEnd="_AFbXMObgEfGP-dqCs_iRcA"/>
   <Blocks:BindingConnector xmi:id="_AFb-QubgEfGP-dqCs_iRcA" base_Connector="_AFaJEObgEfGP-dqCs_iRcA"/>
+  <Requirements:DeriveReqt xmi:id="_QiLSUOmlEfGozJ-Gjk-2WA" base_DirectedRelationship="_Qh7asOmlEfGozJ-Gjk-2WA" base_Abstraction="_Qh7asOmlEfGozJ-Gjk-2WA"/>
+  <Requirements:DeriveReqt xmi:id="_Xzu0YOmlEfGozJ-Gjk-2WA" base_DirectedRelationship="_XzrxEOmlEfGozJ-Gjk-2WA" base_Abstraction="_XzrxEOmlEfGozJ-Gjk-2WA"/>
+  <Requirements:DeriveReqt xmi:id="_iJ-PcOmlEfGozJ-Gjk-2WA" base_DirectedRelationship="_iJ7MIOmlEfGozJ-Gjk-2WA" base_Abstraction="_iJ7MIOmlEfGozJ-Gjk-2WA"/>
+  <Requirements:DeriveReqt xmi:id="_ryBHwOmlEfGozJ-Gjk-2WA" base_DirectedRelationship="_rx-EcOmlEfGozJ-Gjk-2WA" base_Abstraction="_rx-EcOmlEfGozJ-Gjk-2WA"/>
+  <ModelElements:Problem xmi:id="_DU48MOmmEfGozJ-Gjk-2WA" base_Comment="_DUproOmmEfGozJ-Gjk-2WA"/>
+  <ModelElements:Rationale xmi:id="_Ed82AemmEfGozJ-Gjk-2WA" base_Comment="_Ed6ZwOmmEfGozJ-Gjk-2WA"/>
 </xmi:XMI>
