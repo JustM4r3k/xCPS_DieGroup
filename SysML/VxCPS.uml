@@ -55,9 +55,7 @@
           <nestedClassifier xmi:type="uml:Class" xmi:id="_AcI78ORMEfGD2PzXPcaESg" name="Makespan target"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_s4dTMORGEfGD2PzXPcaESg" name="Business requirements" isAbstract="true">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_1vmEQORMEfGD2PzXPcaESg" name="Customer interest">
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_AaHtQORNEfGD2PzXPcaESg" name="BOM target"/>
-          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_1vmEQORMEfGD2PzXPcaESg" name="Customer interest"/>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_m4ma0ORMEfGD2PzXPcaESg" name="Profit estimation" isAbstract="true">
             <nestedClassifier xmi:type="uml:Class" xmi:id="_gnaUIORNEfGD2PzXPcaESg" name="Selling Price"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_lj6DUORNEfGD2PzXPcaESg" name="Redesign cost"/>
@@ -79,6 +77,7 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_5X2nkORQEfGD2PzXPcaESg" name="Fixed layout"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_KuuJkORNEfGD2PzXPcaESg" name="Profit objective"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AaHtQORNEfGD2PzXPcaESg" name="BOM target"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_YBDnIOPxEfGg8KH2-CF6mA" name="Structure">
       <ownedComment xmi:type="uml:Comment" xmi:id="_bO1McOR6EfGjsdib3d454A" annotatedElement="_D_9EUOR1EfGjsdib3d454A">
@@ -670,7 +669,7 @@
   <Requirements:Requirement xmi:id="_AcKxIORMEfGD2PzXPcaESg" base_NamedElement="_AcI78ORMEfGD2PzXPcaESg" id="PR-02" text="If the selling price is not bellow 5113.2eur the batch makespan (inverted tops, normal bottoms) shall be less than 270.96s" base_Class="_AcI78ORMEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_m4oQAORMEfGD2PzXPcaESg" base_NamedElement="_m4ma0ORMEfGD2PzXPcaESg" base_Class="_m4ma0ORMEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_1voggORMEfGD2PzXPcaESg" base_NamedElement="_1vmEQORMEfGD2PzXPcaESg" id="BR-01" text="The selling price shall be bellow 5113.20eur or the batch makespan shall be bellow 270.96s" base_Class="_1vmEQORMEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_AaJicORNEfGD2PzXPcaESg" base_NamedElement="_AaHtQORNEfGD2PzXPcaESg" id="BR-01.1" text="If the batch makespan is not bellow 270.96s, the VOM shall bebellow 3261eur" base_Class="_AaHtQORNEfGD2PzXPcaESg"/>
+  <Requirements:Requirement xmi:id="_AaJicORNEfGD2PzXPcaESg" base_NamedElement="_AaHtQORNEfGD2PzXPcaESg" id="BR-01.1" text="If the batch makespan is not bellow 270.96s, the BOM shall bebellow 3261eur" base_Class="_AaHtQORNEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_Kuwl0ORNEfGD2PzXPcaESg" base_NamedElement="_KuuJkORNEfGD2PzXPcaESg" id="BR-02" text="The design shall maximise the expected profit, subject to PR-01" base_Class="_KuuJkORNEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_T2b8AORNEfGD2PzXPcaESg" base_NamedElement="_T2ZfwORNEfGD2PzXPcaESg" id="BR-03.1" text="The sales volume shall be computed with the described market module" base_Class="_T2ZfwORNEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_gncwYORNEfGD2PzXPcaESg" base_NamedElement="_gnaUIORNEfGD2PzXPcaESg" id="BR-03.2" text="The selling price shall be 1.2 × (BOM + eur1,000)." base_Class="_gnaUIORNEfGD2PzXPcaESg"/>
@@ -679,7 +678,7 @@
   <Requirements:DeriveReqt xmi:id="_t_3GgOROEfGD2PzXPcaESg" base_DirectedRelationship="_t_0qQOROEfGD2PzXPcaESg" base_Abstraction="_t_0qQOROEfGD2PzXPcaESg"/>
   <Requirements:DeriveReqt xmi:id="_kfhjQORPEfGD2PzXPcaESg" base_DirectedRelationship="_kfdR0ORPEfGD2PzXPcaESg" base_Abstraction="_kfdR0ORPEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_rhcRYORQEfGD2PzXPcaESg" base_NamedElement="_rhacMORQEfGD2PzXPcaESg" id="CR-01" text="Belts, index table and gantry arms shall be chosen from the slow,, normal and fast variants" base_Class="_rhacMORQEfGD2PzXPcaESg"/>
-  <Requirements:Requirement xmi:id="_yrtfsORQEfGD2PzXPcaESg" base_NamedElement="_yrrDcORQEfGD2PzXPcaESg" id="CR-02" text="The IO module shall have one gantry arm" base_Class="_yrrDcORQEfGD2PzXPcaESg"/>
+  <Requirements:Requirement xmi:id="_yrtfsORQEfGD2PzXPcaESg" base_NamedElement="_yrrDcORQEfGD2PzXPcaESg" id="CR-02" text="The IO module shall have at least one gantry arm" base_Class="_yrrDcORQEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_5X5D0ORQEfGD2PzXPcaESg" base_NamedElement="_5X2nkORQEfGD2PzXPcaESg" id="CR-03" text="The machine layout (storage, belts, turner, index table 2, pick-and-place, switches) shall be kept as in the current machine" base_Class="_5X2nkORQEfGD2PzXPcaESg"/>
   <Requirements:Requirement xmi:id="_XpnPsORuEfGD2PzXPcaESg" base_NamedElement="_XpkzcORuEfGD2PzXPcaESg" id="VR-01" text="The correctness of the chosen design shall be supported by verified POOSL models" base_Class="_XpkzcORuEfGD2PzXPcaESg"/>
   <ModelElements:Rationale xmi:id="_KbRJoORvEfGD2PzXPcaESg" base_Comment="_6ua2QORuEfGD2PzXPcaESg"/>
